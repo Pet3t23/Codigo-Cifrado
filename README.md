@@ -1,8 +1,8 @@
 Proyecto de Cifrado de Archivos en C++
-📌 Introducción
+ Introducción
 Este proyecto en C++ tiene como objetivo aplicar distintos algoritmos de cifrado sobre archivos de texto. Está diseñado para leer archivos ubicados en una carpeta específica, aplicarles un cifrado y guardar los resultados en otra carpeta. Es ideal como práctica de conceptos de seguridad básica, manipulación de archivos y programación modular en C++.
 
-⚙️ ¿Cómo funciona?
+ ¿Cómo funciona?
 El programa lee los archivos de texto que se encuentran en la carpeta DatosCrudos/.
 
 Según el nombre del archivo, se le aplica un tipo de cifrado específico:
@@ -19,7 +19,7 @@ des.txt → Cifrado DES simulado (no es DES real).
 
 Cada archivo cifrado se guarda con un nuevo nombre en la carpeta DatosCifrados/.
 
-🔐 Métodos de cifrado implementados
+ Métodos de cifrado implementados
 ASCII
 Convierte cada carácter del archivo a su valor decimal ASCII, separados por espacios.
 
@@ -35,7 +35,7 @@ Utiliza una clave (la letra P) repetida para cifrar el texto con una variante de
 Cifrado DES (Simulado)
 No es el algoritmo DES real. Este cifrado simplemente intercambia el orden de los caracteres como una simulación de un proceso de sustitución.
 
-🔑 Clave usada
+ Clave usada
 Para todos los algoritmos que requieren clave (XOR, Vigenère y César), se utiliza la misma letra:
 
 Clave utilizada: P
