@@ -1,46 +1,63 @@
-Proyecto de Cifrado de Archivos en C++
- Introducción
-Este proyecto en C++ tiene como objetivo aplicar distintos algoritmos de cifrado sobre archivos de texto. Está diseñado para leer archivos ubicados en una carpeta específica, aplicarles un cifrado y guardar los resultados en otra carpeta. Es ideal como práctica de conceptos de seguridad básica, manipulación de archivos y programación modular en C++.
+🔐 Proyecto de Cifrado de Archivos en C++
+📌 Introducción
+Este proyecto en C++ tiene como objetivo aplicar distintos algoritmos de cifrado sobre archivos de texto. Está diseñado para:
 
- ¿Cómo funciona?
-El programa lee los archivos de texto que se encuentran en la carpeta DatosCrudos/.
+Leer archivos ubicados en una carpeta específica (DatosCrudos/)
 
-Según el nombre del archivo, se le aplica un tipo de cifrado específico:
+Aplicarles un cifrado según su nombre
 
-ascii.txt → Conversión simple a valores ASCII.
+Guardar los resultados cifrados en otra carpeta (DatosCifrados/)
 
-cesar.txt → Cifrado César.
+Este proyecto es ideal como práctica de:
 
-xor.txt → Cifrado XOR.
+Conceptos básicos de seguridad informática
 
-vigenere.txt → Cifrado Vigenère.
+Manipulación de archivos
 
-des.txt → Cifrado DES simulado (no es DES real).
+Programación modular en C++
 
-Cada archivo cifrado se guarda con un nuevo nombre en la carpeta DatosCifrados/.
+⚙️ ¿Cómo funciona?
+El programa lee automáticamente los archivos de texto en la carpeta DatosCrudos/.
 
- Métodos de cifrado implementados
-ASCII
+Según el nombre del archivo, se aplica un tipo de cifrado específico:
+
+ascii.txt → Conversión simple a valores ASCII
+
+cesar.txt → Cifrado César
+
+xor.txt → Cifrado XOR
+
+vigenere.txt → Cifrado Vigenère
+
+des.txt → Cifrado DES (simulado)
+
+Los archivos cifrados se guardan en la carpeta DatosCifrados/.
+
+🔐 Métodos de Cifrado Implementados
+🔸 ASCII
 Convierte cada carácter del archivo a su valor decimal ASCII, separados por espacios.
 
-Cifrado César
-Desplaza cada letra del alfabeto por un valor fijo. En este caso, el desplazamiento se hace con base en la letra P.
+🔸 Cifrado César
+Desplaza cada letra del alfabeto por un valor fijo.
+En este caso, el desplazamiento se basa en la letra P.
 
-Cifrado XOR
+🔸 Cifrado XOR
 Aplica la operación lógica XOR carácter por carácter, usando como clave la letra P.
 
-Cifrado Vigenère
-Utiliza una clave (la letra P) repetida para cifrar el texto con una variante del cifrado César por carácter.
+🔸 Cifrado Vigenère
+Utiliza una clave repetida (la letra P) para cifrar el texto con una variante del cifrado César por carácter.
 
-Cifrado DES (Simulado)
-No es el algoritmo DES real. Este cifrado simplemente intercambia el orden de los caracteres como una simulación de un proceso de sustitución.
+🔸 Cifrado DES (Simulado)
+No es el algoritmo DES real.
+Este método reordena los caracteres como una simulación de un proceso de sustitución.
 
- Clave usada
-Para todos los algoritmos que requieren clave (XOR, Vigenère y César), se utiliza la misma letra:
+🔑 Clave Usada
+Para todos los algoritmos que requieren una clave (César, XOR y Vigenère), se utiliza la misma:
 
-Clave utilizada: P
+Clave: P
 
 👤 Autor
 Alejandro Aldair León Reséndiz
-Estudiante de Ingeniería en Aplicaciones y Videojuegos - UCQ
+Estudiante de Ingeniería en Aplicaciones y Videojuegos
+Universidad Cuauhtémoc Querétaro (UCQ)
 
