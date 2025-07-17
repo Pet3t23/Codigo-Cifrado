@@ -90,8 +90,8 @@ int main() {
 
         switch (opcion) {
         case 1: { // Cifrado César
-            rutaCrudo = "Datos/Cesar/crudo.txt";
-            rutaCifrado = "Datos/Cesar/cifrado.txt";
+            rutaCrudo = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCrudos\\cesar.txt";
+            rutaCifrado = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCifrados\\cesar.txt";
 
             std::cout << "\n[César] Ingrese el desplazamiento: ";
             int clave;
@@ -125,8 +125,8 @@ int main() {
         }
 
         case 2: { // Cifrado XOR
-            rutaCrudo = "Datos/xor/crudo.txt";
-            rutaCifrado = "Datos/xor/cifrado.txt";
+            rutaCrudo = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCrudos\\xor.txt";
+            rutaCifrado = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCifrados\\xor.txt";
 
             std::cout << "\n[XOR] Ingrese la clave (un solo carácter): ";
             char clave;
@@ -160,8 +160,8 @@ int main() {
         }
 
         case 3: { // ASCII a binario
-            rutaCrudo = "Datos/ascii/crudo.txt";
-            rutaCifrado = "Datos/ascii/cifrado.txt";
+            rutaCrudo = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCrudos\\ascii.txt";
+            rutaCifrado = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCifrados\\ascii.txt";
 
             if (mostrarSubmenuAccion()) {
                 entrada = leerArchivo(rutaCrudo);
@@ -190,8 +190,8 @@ int main() {
         }
 
         case 4: { // Cifrado DES simulado
-            rutaCrudo = "Datos/des/crudo.txt";
-            rutaCifrado = "Datos/des/cifrado.txt";
+            rutaCrudo = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCrudos\\des.txt";
+            rutaCifrado = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCifrados\\des.txt";
 
             std::cout << "\n[ DES simulado] Ingresa la clave: ";
             std::string clave;
@@ -226,8 +226,8 @@ int main() {
         }
 
         case 5: { // Cifrado Vigenère
-            rutaCrudo = "Datos/vigenere/crudo.txt";
-            rutaCifrado = "Datos/vigenere/cifrado.txt";
+            rutaCrudo = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCrudos\\vigenere.txt";
+            rutaCifrado = "C:\\Users\\aleja\\OneDrive\\Documentos\\GitHub\\Codigo-Cifrado\\DatosCifrados\\vigenere.txt";
 
             std::cout << "\n[ Vigenère] Ingresa la clave: ";
             std::string clave;
